@@ -1,0 +1,30 @@
+{
+  "tasks": {
+    "dev": "deno run --unstable-cron --unstable-kv --allow-env --allow-net --allow-read --allow-write --watch src/bot.ts",
+    "start": "deno run --unstable-cron --unstable-kv --allow-env --allow-net --allow-read --allow-write src/bot.ts"
+  },
+  "lint": {
+    "include": [
+      "."
+    ],
+    "rules": {
+      "tags": [
+        "recommended"
+      ],
+      "exclude": [
+        "no-explicit-any"
+      ]
+    }
+  },
+  "fmt": {
+    "include": [
+      "."
+    ],
+    "useTabs": false,
+    "lineWidth": 120,
+    "indentWidth": 2,
+    "semiColons": true,
+    "singleQuote": true,
+    "proseWrap": "preserve"
+  }
+}
