@@ -1,9 +1,8 @@
-import NDK, { NDKEvent, NDKPrivateKeySigner, type NDKRelay, type NostrEvent } from 'npm:@nostr-dev-kit/ndk@2.3.2';
-import chalk from 'npm:chalk@5.3.0';
-import * as chrono from 'npm:chrono-node@2.7.4';
-import { format, fromUnixTime, getUnixTime } from 'npm:date-fns@3.2.0';
-import { assert } from 'https://deno.land/std@0.212.0/assert/mod.ts';
-import * as dotenv from 'https://deno.land/std@0.212.0/dotenv/mod.ts';
+import NDK, { NDKEvent, NDKPrivateKeySigner, type NDKRelay, type NostrEvent } from '@nostr-dev-kit/ndk';
+import chalk from 'chalk';
+import * as chrono from 'chrono-node';
+import { format, fromUnixTime, getUnixTime } from 'date-fns';
+import * as dotenv from 'dotenv';
 
 const log = console.log;
 const debug = chalk.bold.gray;
