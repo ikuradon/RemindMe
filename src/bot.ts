@@ -35,6 +35,14 @@ type ReminderList = Array<Reminder>;
 
 const currUnixtime = (): number => getUnixTime(new Date());
 
+const getEnv = (key: string) => {
+  const value = Deno.env.get(key);
+  if ((value === undefined) || (value === null)) {
+    throw (`missing env var for ${key}`);
+  }
+  return value;
+};
+
 const convertTZ = (date: Date, tzString: string): Date => {
   return new Date(date.toLocaleString('sv-SE', { timeZone: tzString }));
 };
@@ -154,8 +162,7 @@ const tzCommandRegex = /^TZ\b/i;
 
   const COOL_TIME_DUR_SEC: number = parseInt(Deno.env.get('COOL_TIME_DUR_SEC') || '60', 10);
   const KV_LOCATION: string = Deno.env.get('KV_LOCATION') || ':memory:';
-  const BOT_PRIVKEY: string = Deno.env.get('BOT_PRIVKEY') || '';
-  assert(BOT_PRIVKEY);
+  const BOT_PRIVKEY: string = getEnv('BOT_PRIVKEY');
 
   kv = await Deno.openKv(KV_LOCATION);
 
