@@ -11,11 +11,11 @@
     "useTabs": false
   },
   "imports": {
-    "@nostr-dev-kit/ndk": "npm:@nostr-dev-kit/ndk@2.3.2",
+    "@nostr-dev-kit/ndk": "npm:@nostr-dev-kit/ndk@2.10.1",
     "chalk": "npm:chalk@5.3.0",
-    "chrono-node": "npm:chrono-node@2.7.4",
-    "date-fns": "npm:date-fns@3.2.0",
-    "dotenv": "https://deno.land/std@0.212.0/dotenv/mod.ts"
+    "chrono-node": "npm:chrono-node@2.7.7",
+    "date-fns": "npm:date-fns@4.1.0",
+    "dotenv": "jsr:@std/dotenv@0.225.2"
   },
   "lint": {
     "include": [

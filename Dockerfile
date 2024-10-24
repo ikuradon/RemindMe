@@ -1,8 +1,7 @@
-FROM denoland/deno:1.40.3
+FROM denoland/deno:2.0.2
 
 WORKDIR /app
 COPY --chown=deno . .
 RUN deno cache src/bot.ts
 
-EXPOSE 3000
 CMD ["task", "start"]
