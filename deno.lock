@@ -2,7 +2,7 @@
   "version": "4",
   "specifiers": {
     "jsr:@std/dotenv@0.225.2": "0.225.2",
-    "npm:@nostr-dev-kit/ndk@2.10.1": "2.10.1",
+    "npm:@nostr-dev-kit/ndk@^2.10.7": "2.10.7",
     "npm:chalk@5.3.0": "5.3.0",
     "npm:chrono-node@2.7.7": "2.7.7",
     "npm:date-fns@4.1.0": "4.1.0"
@@ -28,10 +28,10 @@
         "@noble/hashes@1.3.2"
       ]
     },
-    "@noble/curves@1.6.0": {
-      "integrity": "sha512-TlaHRXDehJuRNR9TfZDNQ45mMEd5dwUwmicsafcIX4SsNiqnCHKjE/1alYPd/lDRVhxdhUAlv8uEhMCI5zjIJQ==",
+    "@noble/curves@1.7.0": {
+      "integrity": "sha512-UTMhXK9SeDhFJVrHeUJ5uZlI6ajXg10O6Ddocf9S6GjbSBVZsJo88HzKwXznNfGpMTRDyJkqMjNDPYgf0qFWnw==",
       "dependencies": [
-        "@noble/hashes@1.5.0"
+        "@noble/hashes@1.6.0"
       ]
     },
     "@noble/hashes@1.3.1": {
@@ -40,19 +40,22 @@
     "@noble/hashes@1.3.2": {
       "integrity": "sha512-MVC8EAQp7MvEcm30KWENFjgR+Mkmf+D189XJTkFIlwohU5hcBbn1ZkKq7KVTi2Hme3PMGF390DaL52beVrIihQ=="
     },
-    "@noble/hashes@1.5.0": {
-      "integrity": "sha512-1j6kQFb7QRru7eKN3ZDvRcP13rugwdxZqCjbiAVZfIJwgj2A65UmT4TgARXGlXgnRkORLTDTrO19ZErt7+QXgA=="
+    "@noble/hashes@1.6.0": {
+      "integrity": "sha512-YUULf0Uk4/mAA89w+k3+yUYh6NrEvxZa5T6SY3wlMvE2chHkxFUUIDI8/XW1QSC357iA5pSnqt7XEhvFOqmDyQ=="
+    },
+    "@noble/hashes@1.6.1": {
+      "integrity": "sha512-pq5D8h10hHBjyqX+cfBm0i8JUXJ0UhczFc4r74zbuT9XgewFo2E3J1cOaGtdZynILNmQ685YWGzGE1Zv6io50w=="
     },
     "@noble/secp256k1@2.1.0": {
       "integrity": "sha512-XLEQQNdablO0XZOIniFQimiXsZDNwaYgL96dZwC54Q30imSbAOFf3NKtepc+cXyuZf5Q1HCgbqgZ2UFFuHVcEw=="
     },
-    "@nostr-dev-kit/ndk@2.10.1": {
-      "integrity": "sha512-DE4n+wLL8nzja9rwBC1yuDG+fE5aky/ByWQu9H+b8qsq5/iPokFaB87TUbdTMwSzP45qJTTRNVH95NsuXaoqig==",
+    "@nostr-dev-kit/ndk@2.10.7": {
+      "integrity": "sha512-cylva8jsaAGMijxAI32CnJWlzvwD4sWyl86/+RMS6xpZn4MIgeVUfBFc/pYkcfZzDP3v1Z9mIPsuiICRyvu9yQ==",
       "dependencies": [
-        "@noble/curves@1.6.0",
-        "@noble/hashes@1.5.0",
+        "@noble/curves@1.7.0",
+        "@noble/hashes@1.6.1",
         "@noble/secp256k1",
-        "@scure/base@1.1.9",
+        "@scure/base@1.2.1",
         "debug@4.3.7",
         "light-bolt11-decoder",
         "nostr-tools",
@@ -65,22 +68,22 @@
     "@scure/base@1.1.1": {
       "integrity": "sha512-ZxOhsSyxYwLJj3pLZCefNitxsj093tb2vq90mp2txoYeBqbcjDjqFhyM8eUjq/uFm6zJ+mUuqxlS2FkuSY1MTA=="
     },
-    "@scure/base@1.1.9": {
-      "integrity": "sha512-8YKhl8GHiNI/pU2VMaofa2Tor7PJRAjwQLBBuilkJ9L5+13yVbC7JO/wS7piioAvPSwR3JKM1IJ/u4xQzbcXKg=="
+    "@scure/base@1.2.1": {
+      "integrity": "sha512-DGmGtC8Tt63J5GfHgfl5CuAXh96VF/LD8K9Hr/Gv0J2lAoRGlPOMpqMpMbCTOoOJMZCk2Xt+DskdDyn6dEFdzQ=="
     },
     "@scure/bip32@1.3.1": {
       "integrity": "sha512-osvveYtyzdEVbt3OfwwXFr4P2iVBL5u1Q3q4ONBfDY/UpOuXmOlbgwc1xECEboY8wIays8Yt6onaWMUdUbfl0A==",
       "dependencies": [
         "@noble/curves@1.1.0",
         "@noble/hashes@1.3.2",
-        "@scure/base@1.1.9"
+        "@scure/base@1.1.1"
       ]
     },
     "@scure/bip39@1.2.1": {
       "integrity": "sha512-Z3/Fsz1yr904dduJD0NpiyRHhRYHdcnyh73FZWiV+/qhWi83wNJ3NWolYqCEN+ZWsUz2TWwajJggcRE9r1zUYg==",
       "dependencies": [
         "@noble/hashes@1.3.2",
-        "@scure/base@1.1.9"
+        "@scure/base@1.1.1"
       ]
     },
     "bufferutil@4.0.8": {
@@ -98,11 +101,11 @@
         "dayjs"
       ]
     },
-    "d@1.0.1": {
-      "integrity": "sha512-m62ShEObQ39CfralilEQRjH6oAMtNCV1xJyEx5LpRYUVN+EviphDgUc/F3hnYbADmkiNs67Y+3ylmlG7Lnu+FA==",
+    "d@1.0.2": {
+      "integrity": "sha512-MOqHvMWF9/9MX6nza0KgvFH4HpMU0EF5uUDXqX/BtxtU8NfB0QzRtJ8Oe/6SuS4kbhyzVJwjd97EA4PKrzJ8bw==",
       "dependencies": [
         "es5-ext",
-        "type@1.2.0"
+        "type"
       ]
     },
     "date-fns@4.1.0": {
@@ -140,8 +143,8 @@
         "es6-symbol"
       ]
     },
-    "es6-symbol@3.1.3": {
-      "integrity": "sha512-NJ6Yn3FuDinBaBRWl/q5X/s4koRHBrgKAu+yGI6JCBeiu3qrcbJhwT2GeR/EXVfylRk8dpQVJoLEFhK+Mu31NA==",
+    "es6-symbol@3.1.4": {
+      "integrity": "sha512-U9bFFjX8tFiATgtkJ1zg25+KviIXpgRvRHS8sau3GfhVzThRQrOeksPeT0BWW2MNZs1OEWJ1DPXOQMn0KKRkvg==",
       "dependencies": [
         "d",
         "ext"
@@ -153,7 +156,7 @@
         "d",
         "es5-ext",
         "event-emitter",
-        "type@2.7.2"
+        "type"
       ]
     },
     "event-emitter@0.3.5": {
@@ -166,7 +169,7 @@
     "ext@1.7.0": {
       "integrity": "sha512-6hxeJYaL110a9b5TEJSj0gojyHQAmA2ch5Os+ySCiA1QGdS697XWY1pzsrSjqA9LDEEgdB/KypIlR59RcLuHYw==",
       "dependencies": [
-        "type@2.7.2"
+        "type"
       ]
     },
     "is-typedarray@1.0.0": {
@@ -187,11 +190,11 @@
     "next-tick@1.1.0": {
       "integrity": "sha512-CXdUiJembsNjuToQvxayPZF9Vqht7hewsvy2sOWafLvi2awflj9mOC6bHIg50orX8IJvWKY9wYQ/zB2kogPslQ=="
     },
-    "node-gyp-build@4.8.0": {
-      "integrity": "sha512-u6fs2AEUljNho3EYTJNBfImO5QTo/J/1Etd+NVdCj7qWKUSN/bSLkZwhDv7I+w/MSC6qJ4cknepkAYykDdK8og=="
+    "node-gyp-build@4.8.4": {
+      "integrity": "sha512-LA4ZjwlnUblHVgq0oBF3Jl/6h/Nvs5fzBLwdEF4nuxnFdsfajde4WfxtJr3CaiH+F6ewcIB/q4jQ4UzPyid+CQ=="
     },
-    "nostr-tools@2.9.1": {
-      "integrity": "sha512-QYK/M2eugK82dEriVGSzZCRn6Sbb88bxICA15wr+ebEULSACysZnDhNoCxdJyqZPva5x+Ql7h4JmEfpc6Ov2fQ==",
+    "nostr-tools@2.10.4": {
+      "integrity": "sha512-biU7sk+jxHgVASfobg2T5ttxOGGSt69wEVBC51sHHOEaKAAdzHBLV/I2l9Rf61UzClhliZwNouYhqIso4a3HYg==",
       "dependencies": [
         "@noble/ciphers",
         "@noble/curves@1.2.0",
@@ -211,11 +214,8 @@
     "tstl@2.5.16": {
       "integrity": "sha512-+O2ybLVLKcBwKm4HymCEwZIT0PpwS3gCYnxfSDEjJEKADvIFruaQjd3m7CAKNU1c7N3X3WjVz87re7TA2A5FUw=="
     },
-    "type@1.2.0": {
-      "integrity": "sha512-+5nt5AAniqsCnu2cEQQdpzCAh33kVx8n0VoFidKpB1dVVLAN/F+bgVOqOJqOnEnrhp222clB5p3vUlD+1QAnfg=="
-    },
-    "type@2.7.2": {
-      "integrity": "sha512-dzlvlNlt6AXU7EBSfpAscydQ7gXB+pPGsPnfJnZpiNJBDj7IaJzQlBZYGdEi4R9HmPdBv2XmWJ6YUtoTa7lmCw=="
+    "type@2.7.3": {
+      "integrity": "sha512-8j+1QmAbPvLZow5Qpi6NCaN8FB60p/6x8/vfNqOk/hC+HuvFZhL4+WfekuhQLiqFZXOgQdrs3B+XxEmCc6b3FQ=="
     },
     "typedarray-to-buffer@3.1.5": {
       "integrity": "sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==",
@@ -260,7 +260,7 @@
   "workspace": {
     "dependencies": [
       "jsr:@std/dotenv@0.225.2",
-      "npm:@nostr-dev-kit/ndk@2.10.1",
+      "npm:@nostr-dev-kit/ndk@^2.10.7",
       "npm:chalk@5.3.0",
       "npm:chrono-node@2.7.7",
       "npm:date-fns@4.1.0"
